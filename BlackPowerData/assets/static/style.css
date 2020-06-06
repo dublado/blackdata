@@ -1,8 +1,9 @@
 .grid-container{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 200px 400px 200px ;
+    grid-template-rows: 100px 400px 100px ;
     grid-gap: 10px;
+    padding-top: 30px;
  
 }
 header h1{
@@ -14,10 +15,32 @@ nav ul{
     color: #000;
 }
 
-li{
+.navbar li{
     display: block;
     text-align: center;
     float: right;
     padding: 14px 16px;
+    
+}
+
+
+footer{
+    display: block;
+    padding-top: 30px;
+}
+
+.copyright{
+    text-align: center;
+    font-size:10px ;
+}
+
+.redes_sociais{
+    display: inline;
+    
+}
+
+.page{
+    display: block;
+    margin:  5%;
     
 }
