@@ -5,9 +5,7 @@
 <title>{% block title %}BlackPowerData{% endblock %}</title>
 <div class='grid-container'>
 
-
   <header>
-    <a href="{{'/'|url }}"><h1>BlackPowerData</h1></a>
     <nav class="navbar">
       <ul class="nav navbar-nav">
         <li{% if this._path == '/' %} class="active"{% endif
@@ -25,13 +23,15 @@
   </header>
  
   <body>
+      <a href="{{'/'|url }}"><img src="/static/images/logo.png" class="logo"></a>
     <div class="page">
       {% block body %}{% endblock %}
     </div>
   </body>  
+
   <footer>
     <div class='redes_sociais'>
-      <a href="https://twitter.com/BlackPowerData1"><img src="{{ base_url }}/static/images/logo_twitter.png" alt="twitter" width="auto" height="50"></a>
+      <a href="https://twitter.com/BlackPowerData1"><img src="{{ base_url }}/static/images/twitter.png" alt="twitter" width="auto" height="50"></a>
       <a href="mailto:blackpowerdata@gmail.com?subject=ContatoBPD"><img src="{{ base_url }}/static/images/mail.png" width="auto" height="50"></a>
       <a href="https://github.com/BlackPowerData/"><img src="{{ base_url }}/static/images/GitHub_logo.png" width="auto" height="50"></a>
     </div>
