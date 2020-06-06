@@ -1,2 +1,10 @@
 [project]
 name = BlackPowerData
+
+[packages]
+lektor-netlify = 0.3
+
+[servers.production]
+name = Production
+target = netlify://blackpowerdata.netlify.app
+key = 54de3435e35f43455776a9dc60c1bfc2b1efa56a059cd60a1b948349363e2bd2
