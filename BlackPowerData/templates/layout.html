@@ -1,14 +1,17 @@
 <!doctype html>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — BlackPowerData</title>
-<body>
+<title>{% block title %}BlackPowerData{% endblock %}</title>
+<div class='grid-container'>
+
+
   <header>
-    <h1>BlackPowerData</h1>
-    <nav>
+    <a href="{{'/'|url }}"><h1>BlackPowerData</h1></a>
+    <nav class="navbar">
       <ul class="nav navbar-nav">
         <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
+          %}><a href="{{ '/'|url }}"></a></li>
         {% for href, title in [
           ['/blog', 'Blog'],
           ['/projects', 'Projects'],
@@ -20,10 +23,19 @@
       </ul>
     </nav>
   </header>
-  <div class="page">
-    {% block body %}{% endblock %}
-  </div>
+ 
+  <body>
+    <div class="page">
+      {% block body %}{% endblock %}
+    </div>
+  </body>  
   <footer>
-    &copy; Copyright 2020 by Caroline Dantas.
+    <div class='redes_sociais'>
+      <a href="https://twitter.com/BlackPowerData1"><img src="{{ base_url }}/static/images/logo_twitter.png" alt="twitter" width="auto" height="100"></a>
+      <a href="mailto:blackpowerdata@gmail.com?subject=ContatoBPD"><img src="{{ base_url }}/static/images/mail.png" width="auto" height="100"></a>
+    </div>
+
+    &copy; Copyright 2020 by BlackPowerData.
   </footer>
-</body>
+</div>  
+
